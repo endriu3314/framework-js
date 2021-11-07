@@ -2,7 +2,7 @@ import { Request, Response } from "express";
 import { Controller } from "../../decorators/controller";
 import { Get } from "../../decorators/routing";
 import { JsonResponse } from "../http";
-import { Controller as ControllerAbstract } from "./controller.class";
+import { Controller as ControllerAbstract } from "../../core/controllers/controller.class";
 
 @Controller("/user")
 export class UserController extends ControllerAbstract {
