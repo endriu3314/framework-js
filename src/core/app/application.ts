@@ -1,6 +1,6 @@
 import { AppConfig } from "../config/config";
-import { Driver } from "./driver.interface";
-import { ExpressDriver } from "./express.driver";
+import { Driver } from "./driver/driver.interface";
+import { ExpressDriver } from "./driver/express.driver";
 
 export class Application {
     public routes: Array<any>;

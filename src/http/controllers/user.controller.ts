@@ -1,8 +1,8 @@
 import { Request, Response } from "express";
-import { Controller } from "../../decorators/controller";
-import { Get } from "../../decorators/routing";
-import { JsonResponse } from "../http";
-import { Controller as ControllerAbstract } from "../../core/controllers/controller.class";
+import { Controller } from "../../core/http/controllers/controller.decorator";
+import { Get } from "../../core/router/routing.decorator";
+import { JsonResponse } from "../../core/http/response/json.response";
+import { Controller as ControllerAbstract } from "../../core/http/controllers/controller.class";
 
 @Controller("/user")
 export class UserController extends ControllerAbstract {
