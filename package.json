@@ -1,11 +1,12 @@
 {
   "name": "framework-js",
   "version": "1.0.0",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "./dist/src/server.js",
+  "types": "./dist/src/server.d.ts",
   "author": "Andrei Croitoru-Rusan",
   "license": "MIT",
   "scripts": {
+    "cli": "node ./dist/src/cli.js",
     "watch-node": "nodemon dist/src/server.js",
     "dev": "tsc && nodemon dist/src/server.js",
     "serve": "node dist/server.js",
