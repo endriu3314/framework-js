@@ -1,5 +1,5 @@
 import express from "express";
-import { RouteDefinition } from "../../decorators/routing";
+import { RouteDefinition } from "../../router/routing.decorator";
 import { Driver } from "./driver.interface";
 
 export class ExpressDriver implements Driver {
